@@ -27,9 +27,10 @@ loadLighting()
 end)
 
 
-local lighting = game:GetService("Lighting")
+local Time = 0.01
+local TimeChange = 0.01
 
-while true do
-    wait(0.1)
-    lighting.ClockTime = lighting.ClockTime + 0.005
+
+while wait(Time) do
+ game.Lighting.ClockTime = game.Lighting.ClockTime + TimeChange
 end
