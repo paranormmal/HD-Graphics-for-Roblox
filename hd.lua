@@ -26,6 +26,6 @@ end
 loadLighting()
 end)
 
-while wait() do
-    game.Lighting.ClockTime+= 0.001
+while task.wait() do
+    game.Lighting.ClockTime = game.Lighting.ClockTime + 0.00001
 end
