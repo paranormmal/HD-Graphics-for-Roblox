@@ -3,12 +3,7 @@
 repeat task.wait() until game:IsLoaded()
 task.wait(0.06)
 
-local lighting = game:GetService("Lighting")
- 
-while true do
-    wait(0.1)
-    lighting.ClockTime = lighting.ClockTime + 0.005
-end
+
 
 _,i = pcall(function()
 Lighting = game:GetService("Lighting")
@@ -32,4 +27,9 @@ loadLighting()
 end)
 
 
+local lighting = game:GetService("Lighting")
 
+while true do
+    wait(0.1)
+    lighting.ClockTime = lighting.ClockTime + 0.005
+end
