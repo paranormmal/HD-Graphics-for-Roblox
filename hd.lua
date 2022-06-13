@@ -26,11 +26,6 @@ end
 loadLighting()
 end)
 
-
-local Time = 0.01
-local TimeChange = 0.01
-
-
-while wait(Time) do
- game.Lighting.ClockTime = game.Lighting.ClockTime + TimeChange
+while wait() do
+    game.Lighting.ClockTime+= 0.001
 end
