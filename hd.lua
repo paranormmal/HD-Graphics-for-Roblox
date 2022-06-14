@@ -25,7 +25,3 @@ Lighting.ExposureCompensation = _G.ExposureCompensation
 end
 loadLighting()
 end)
-
-while task.wait() do
-    game.Lighting.ClockTime = game.Lighting.ClockTime + 0.00001
-end
